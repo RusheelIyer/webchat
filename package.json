@@ -1,6 +1,6 @@
 {
   "name": "webchat",
-  "homepage": "http://RusheelIyer.github.io/thesis",
+  "homepage": "http://RusheelIyer.github.io/webchat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
