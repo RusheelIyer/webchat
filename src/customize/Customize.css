@@ -1,0 +1,51 @@
+.edit {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, .9); 
+    padding: 20px;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    width: 9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    font-weight: bold;
+    animation-name: slide;
+    animation-duration: 0.25s;
+}
+
+select {
+    color: #EF7B00;
+    font-weight: bold;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.apply {
+    background-color: #EF7B00;
+    border: 1px solid #cccccc;
+    border-radius: 20%;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 5px;
+}
+
+label {
+    animation-name: fade;
+    animation-duration: 1s;
+    margin-bottom: 0.5em;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slide {
+    from {width: 0;}
+    to {width: 9em;}
+}

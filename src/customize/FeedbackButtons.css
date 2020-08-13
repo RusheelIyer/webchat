@@ -1,0 +1,28 @@
+.feedbackButton {
+  min-height: 60px;
+  position: relative;
+}
+
+.feedbackButton .feedbackButton__bar {
+  display: flex;
+  padding-top: 0.25em;
+  padding-left: 3.5em;
+}
+
+.feedbackButton .feedbackButton__button {
+  position: relative;
+  background: White;
+  border: solid 1px #e6e6e6;
+  padding: .5em;
+}
+
+.feedbackButton .feedbackButton__buttonClicked {
+  position: relative;
+  background: #EF7B00;
+  border: solid 1px #e6e6e6;
+  padding: .5em;
+}
+
+.feedbackButton .feedbackButton__button:hover {
+  background-color: #EF7B00;
+}
