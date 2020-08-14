@@ -1,4 +1,6 @@
 import React from 'react';
+import { FaQuestionCircle } from "react-icons/fa";
+
 import $ from 'jquery';
 import { instanceOf } from 'prop-types';
 import { withCookies, Cookies } from 'react-cookie';
@@ -144,19 +146,29 @@ class Customize extends React.Component {
     render() {
 
         return <div className="edit">
-            <label for="bot-name">Bot Name:</label>
+            <div className="label">
+                <FaQuestionCircle title="Change the name of the bot visible under each of the bot's messages."/> <label for="bot-name"> &nbsp;Bot Name:</label>
+            </div>
             <input type="text" id="bot-name" name="bot-name" onChange={this.handleInput} defaultValue={this.state.botName}/>
             <br />
-            <label for="gender">Gender: </label>
+            <div className="label">
+                <FaQuestionCircle title="Changes the appearance of the image of the bot."/> <label for="gender"> &nbsp;Gender: </label>
+            </div>
             {this.renderGenderSelect()}
             <br />
-            <label for="avatar">Avatar: </label>
+            <div className="label">
+                <FaQuestionCircle title="Either see an image of the bot, or just the initials of the bot's name."/>  <label for="avatar"> &nbsp;Avatar: </label>
+            </div>
             {this.renderAvatarSelect()}
             <br />
-            <label for="typing">Typing Indicator: </label>
+            <div className="label">
+                <FaQuestionCircle title="See when the bot is typing."/> <label for="typing"> &nbsp;Typing Indicator: </label>
+            </div>
             {this.renderTypingSelect()}
             <br />
-            <label for="response-time">Response Time: </label>
+            <div className="label">
+                <FaQuestionCircle title="Set how quickly would you like the bot to respond."/> <label for="response-time"> &nbsp;Response Time: </label>
+            </div>
             {this.renderResponseSelect()}
             <br /><br />
             <div class="center">
