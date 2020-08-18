@@ -278,7 +278,7 @@ const MainWebChat = ({cookies}) => {
             <div className="filler" />
             <IconContext.Provider value={{ size: '1.5em' }}>
             <button className="minimize" onClick={handleMinimizeButtonClick}>
-                <FaCaretDown> Customize </FaCaretDown>
+                <FaCaretDown> Personalize </FaCaretDown>
             </button>
             {acceptedData ?
               [<button className="customize" onClick={handleCustomizeButtonClick}>
