@@ -282,7 +282,7 @@ const MainWebChat = ({cookies}) => {
             </button>
             {acceptedData ?
               [<button className="customize" onClick={handleCustomizeButtonClick}>
-              Customize&nbsp;&nbsp;
+              Personalize&nbsp;&nbsp;
               { customize ?
                 <FaCaretRight /> :
                 <FaPen />
